@@ -160,9 +160,4 @@ function Obfuscate(code)
 	return obfuscated_code
 end
 
-if arg[1] == nil then
-	io.stderr:write('file required\n')
-	os.exit(1)
-end
-
-print(Obfuscate(io.open(arg[1], "r"):read("a")))
+return Obfuscate
